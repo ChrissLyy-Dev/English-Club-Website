@@ -71,6 +71,12 @@ function handleImageError(event) {
   }
 }
 
+function checkAlreadyFailed(imgEl) {
+  if (imgEl.src && imgEl.complete && imgEl.naturalWidth === 0) {
+    handleImageError({ target: imgEl });
+  }
+}
+
 function initGallery() {
   document.addEventListener("error", handleImageError, true);
 
@@ -82,6 +88,7 @@ function initGallery() {
   const previews = document.querySelectorAll(".preview");
   previews.forEach(function (preview) {
     preview.setAttribute("tabindex", "0");
+    checkAlreadyFailed(preview);
     preview.addEventListener("dblclick", function () { goToMaterial(preview); });
     preview.addEventListener("keydown", function (event) {
       if (event.key === "Enter") {
