@@ -25,9 +25,29 @@
 
   <main id="content" class="gallery-container">
     <p><a href="../test.html">&larr; Back to gallery</a></p>
-    <section>
-      <h2>Coming soon</h2>
-      <p>Add your reading materials, articles, or exercises here.</p>
+
+    <section id="level-select">
+      <h2 id="level-heading">Choose your level</h2>
+      <div id="level-tabs" class="level-tabs" role="tablist" aria-label="English level"></div>
+    </section>
+
+    <section id="word-arrange-section">
+      <h2>Word Arrange</h2>
+      <p>Click the words in the correct order to build the sentence.</p>
+      <div id="word-answer" class="word-answer" aria-label="Your sentence"></div>
+      <div id="word-bank" class="word-bank" aria-label="Available words"></div>
+      <div class="word-arrange-controls">
+        <button id="word-check" type="button">Check</button>
+        <button id="word-reset" type="button">Reset</button>
+        <button id="word-next" type="button">Next sentence</button>
+      </div>
+      <p id="word-feedback" class="feedback" aria-live="polite"></p>
+    </section>
+
+    <section id="passage-section">
+      <h2 id="passage-title"></h2>
+      <p id="passage-text" class="passage-text"></p>
+      <div id="questions-container"></div>
     </section>
   </main>
 
@@ -36,5 +56,6 @@
   </footer>
 
   <script src="../test.js"></script>
+  <script src="reading.js"></script>
 </body>
 </html>

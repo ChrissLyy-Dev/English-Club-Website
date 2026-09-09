@@ -15,7 +15,9 @@ html {
     --color-card-border: #c7d2e3;
     --color-preview-border: #172033;
     --color-image-bg: #5d687c;
-    --color-skip-bg: #172033
+    --color-skip-bg: #172033;
+    --color-success: #1b7a44;
+    --color-error: #c62828
 }
 
 [data-theme="dark"] {
@@ -27,7 +29,9 @@ html {
     --color-card-border: #3a4356;
     --color-preview-border: #f0f0f0;
     --color-image-bg: #2a3142;
-    --color-skip-bg: #05070d
+    --color-skip-bg: #05070d;
+    --color-success: #4ade80;
+    --color-error: #f87171
 }
 
 body {
@@ -226,6 +230,177 @@ figcaption {
     padding: 12px 4px 2px;
     font-weight: 700;
     text-align: center
+}
+
+.level-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 28px
+}
+
+.level-tab {
+    padding: 10px 20px;
+    border-radius: 999px;
+    border: 2px solid var(--color-preview-border);
+    background: var(--color-card-bg);
+    color: var(--color-text);
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background .2s ease,color .2s ease
+}
+
+.level-tab[aria-selected="true"] {
+    background: var(--color-header-bg);
+    border-color: var(--color-header-bg);
+    color: #fff
+}
+
+.word-answer,.word-bank {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    min-height: 60px;
+    padding: 14px;
+    border-radius: 12px;
+    margin-bottom: 14px
+}
+
+.word-answer {
+    border: 2px solid var(--color-card-border);
+    background: var(--color-card-bg)
+}
+
+.word-answer-hint {
+    color: var(--color-text);
+    opacity: .6;
+    font-style: italic
+}
+
+.word-bank {
+    border: 2px dashed var(--color-card-border)
+}
+
+.word-tile {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 2px solid var(--color-preview-border);
+    background: var(--color-card-bg);
+    color: var(--color-text);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background .2s ease,color .2s ease
+}
+
+.word-tile:hover {
+    background: var(--color-header-bg);
+    color: #fff
+}
+
+.word-tile-placed {
+    background: var(--color-header-bg);
+    border-color: var(--color-header-bg);
+    color: #fff
+}
+
+.word-arrange-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px
+}
+
+.word-arrange-controls button {
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: 2px solid var(--color-preview-border);
+    background: var(--color-card-bg);
+    color: var(--color-text);
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.word-arrange-controls button:hover {
+    background: var(--color-header-bg);
+    border-color: var(--color-header-bg);
+    color: #fff
+}
+
+.feedback {
+    font-weight: 700;
+    min-height: 1.4em;
+    margin: 8px 0 0
+}
+
+.feedback.correct {
+    color: var(--color-success)
+}
+
+.feedback.incorrect {
+    color: var(--color-error)
+}
+
+.passage-text {
+    line-height: 1.7;
+    background: var(--color-card-bg);
+    border: 2px solid var(--color-card-border);
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 24px
+}
+
+.question-card {
+    border: 2px solid var(--color-card-border);
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 18px;
+    background: var(--color-card-bg)
+}
+
+.question-text {
+    margin: 0 0 12px;
+    font-weight: 700
+}
+
+.question-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.option-btn {
+    text-align: left;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 2px solid var(--color-card-border);
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: inherit;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background .2s ease,border-color .2s ease,color .2s ease
+}
+
+.option-btn:hover {
+    border-color: var(--color-header-bg)
+}
+
+.option-btn.correct {
+    background: var(--color-success);
+    border-color: var(--color-success);
+    color: #fff
+}
+
+.option-btn.incorrect {
+    background: var(--color-error);
+    border-color: var(--color-error);
+    color: #fff
 }
 
 @media(max-width: 760px) {
