@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>English Club Gallery</title>
+  <link rel="stylesheet" href="../test.css">
+  <script>
+    (function () {
+      var stored = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <h1>Gallery</h1>
+    <p>English Club memories.</p>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+      <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+    </button>
+  </header>
+
+  <main id="content" class="gallery-container">
+    <p><a href="../test.html">&larr; Back to gallery</a></p>
+
+    <section id="selected">
+      <h2>Selected photo</h2>
+      <div id="image" role="img">
+        <img class="selected-image" alt="" hidden>
+        <span class="image-label">Click a photo below to display it here.</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>English Club memories</h2>
+      <div class="thumbnail-grid">
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/1.jpeg" alt="Halloween Party">
+          <figcaption>Halloween Party</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/2.jpeg" alt="English Club Session">
+          <figcaption>English Club Session</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/3.jpeg" alt="English Club Session">
+          <figcaption>English Club Session</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/4.jpeg" alt="Group Discussion">
+          <figcaption>Group Discussion</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/Anna%20caper.jpeg" alt="Anna Caper">
+          <figcaption>Anna Caper</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/Korban%20kekerasan%20bedak.jpeg" alt="Korban Kekerasan Bedak">
+          <figcaption>Korban Kekerasan Bedak</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/MAAAM%20MEI!!!.jpeg" alt="Maam Mei!!!">
+          <figcaption>Maam Mei!!!</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/Member%20ec%20lagi.jpeg" alt="Member EC Lagi">
+          <figcaption>Member EC Lagi</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/Member%20ec.jpeg" alt="Member EC">
+          <figcaption>Member EC</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/WhatsApp%20Image%202026-08-05%20at%209.20.02%20PM.jpeg" alt="English Club Members">
+          <figcaption>English Club Members</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/WhatsApp%20Image%202026-08-05%20at%209.57.35%20PM.jpeg" alt="Halloween Costume Party">
+          <figcaption>Halloween Costume Party</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/WhatsApp%20Image%202026-08-05%20at%209.57.49%20PM.jpeg" alt="English Club Session">
+          <figcaption>English Club Session</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/anna%20gawee.jpeg" alt="Anna Gawee">
+          <figcaption>Anna Gawee</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/baju%20putih%20ga%20gawe.jpeg" alt="Baju Putih Ga Gawe">
+          <figcaption>Baju Putih Ga Gawe</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/chaosss.jpeg" alt="Chaosss">
+          <figcaption>Chaosss</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/ecc.jpeg" alt="Ecc">
+          <figcaption>Ecc</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/gisel%20gawe.jpeg" alt="Gisel Gawe">
+          <figcaption>Gisel Gawe</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/hallowen.jpeg" alt="Hallowen">
+          <figcaption>Hallowen</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/korban%20kedua%20kekerasan%20bedak.jpeg" alt="Korban Kedua Kekerasan Bedak">
+          <figcaption>Korban Kedua Kekerasan Bedak</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/member%20ec%20lagi%20dan%20lagi.jpeg" alt="Member EC Lagi dan Lagi">
+          <figcaption>Member EC Lagi dan Lagi</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/oliver%20gawee%20.jpeg" alt="Oliver Gawee">
+          <figcaption>Oliver Gawee</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/peter%20gaweee.jpeg" alt="Peter Gaweee">
+          <figcaption>Peter Gaweee</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/qian%20gawee.jpeg" alt="Qian Gawee">
+          <figcaption>Qian Gawee</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img class="preview" src="../aset/teachers%20day%20with%20maam%20mei.jpeg" alt="Teachers Day with Maam Mei">
+          <figcaption>Teachers Day with Maam Mei</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Accessible JavaScript Photo Gallery Final Project
+  </footer>
+
+  <script src="../test.js"></script>
+</body>
+</html>

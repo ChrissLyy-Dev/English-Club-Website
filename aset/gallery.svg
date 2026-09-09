@@ -1,0 +1,11 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="galleryTitle">
+  <title id="galleryTitle">Gallery icon</title>
+  <rect width="400" height="300" fill="#173b72"/>
+  <circle cx="200" cy="150" r="85" fill="#06d6a0"/>
+  <rect x="150" y="115" width="80" height="60" rx="6" fill="#ffffff" opacity="0.55" transform="rotate(-8 190 145)"/>
+  <g transform="rotate(6 215 152)">
+    <rect x="170" y="120" width="90" height="65" rx="6" fill="#ffffff"/>
+    <circle cx="195" cy="137" r="7" fill="#f2b705"/>
+    <polygon points="178,178 205,140 222,165 240,178" fill="#173b72"/>
+  </g>
+</svg>

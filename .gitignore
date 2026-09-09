@@ -1,0 +1,13 @@
+# Claude Code local tool settings - not part of the project
+.claude/
+
+# English Club member photos - not yet cleared for public posting.
+# The SVG icons in aset/ are generated graphics and stay tracked.
+aset/*.jpeg
+aset/*.jpg
+aset/*.JPG
+aset/*.JPEG
+aset/*.png
+aset/*.PNG
+aset/*.heic
+aset/*.HEIC

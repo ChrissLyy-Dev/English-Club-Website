@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessible Photo Gallery</title>
+  <link rel="stylesheet" href="test.css">
+  <script>
+    (function () {
+      var stored = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+</head>
+<body>
+    <!-- Skip link untuk aksesibilitas -->
+    <a class="skip-link" href="#gallery">Skip to photo gallery</a>
+
+    <!-- Header -->
+    <header class="site-header">
+      <h1>Accessible English Language Material Gallery</h1>
+      <p>Explore the English learning materials below and click one to display it here.</p>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+        <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+      </button>
+    </header>
+
+    <!-- Main gallery container -->
+    <main id="gallery" class="gallery-container">
+      <section id="selected">
+        <h2>Selected materials</h2>
+        <div id="image" role="img">
+          <img class="selected-image" alt="" hidden>
+          <span class="image-label">Click an image below to display it here.</span>
+        </div>
+      </section>
+
+      <section id="collection">
+        <h2>Materials collection</h2>
+        <div class="thumbnail-grid">
+          <figure class="gallery-item">
+            <img class="preview" src="aset/reading.svg" alt="Reading" data-link="materi/reading.html">
+            <figcaption>Reading</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img class="preview" src="aset/writing.svg" alt="Writing" data-link="materi/writing.html">
+            <figcaption>Writing</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img class="preview" src="aset/listening.svg" alt="Listening" data-link="materi/listening.html">
+            <figcaption>Listening</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img class="preview" src="aset/gallery.svg" alt="Gallery" data-link="materi/gallery.html">
+            <figcaption>Gallery</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img class="preview" src="aset/grammar.svg" alt="Grammar" data-link="materi/grammar.html">
+            <figcaption>Grammar</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img class="preview" src="aset/vocabulary.svg" alt="Vocabulary" data-link="materi/vocabulary.html">
+            <figcaption>Vocabulary</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      Accessible JavaScript Photo Gallery First Project
+    </footer>
+
+    <!-- Script untuk interaksi galeri -->
+    <script src="test.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="grammarTitle">
+  <title id="grammarTitle">Grammar material icon</title>
+  <rect width="400" height="300" fill="#173b72"/>
+  <circle cx="200" cy="150" r="85" fill="#9d4edd"/>
+  <rect x="130" y="118" width="50" height="64" rx="8" fill="#ffffff"/>
+  <rect x="175" y="105" width="50" height="64" rx="8" fill="#ffffff"/>
+  <rect x="220" y="118" width="50" height="64" rx="8" fill="#ffffff"/>
+  <text x="155" y="160" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#173b72" text-anchor="middle">A</text>
+  <text x="200" y="147" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#173b72" text-anchor="middle">B</text>
+  <text x="245" y="160" font-family="Arial, sans-serif" font-size="30" font-weight="700" fill="#173b72" text-anchor="middle">C</text>
+</svg>

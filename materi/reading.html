@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reading Materials</title>
+  <link rel="stylesheet" href="../test.css">
+  <script>
+    (function () {
+      var stored = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="site-header">
+    <h1>Reading</h1>
+    <p>Further reading materials and practice.</p>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+      <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+    </button>
+  </header>
+
+  <main id="content" class="gallery-container">
+    <p><a href="../test.html">&larr; Back to gallery</a></p>
+    <section>
+      <h2>Coming soon</h2>
+      <p>Add your reading materials, articles, or exercises here.</p>
+    </section>
+  </main>
+
+  <footer>
+    Accessible JavaScript Photo Gallery Final Project
+  </footer>
+
+  <script src="../test.js"></script>
+</body>
+</html>

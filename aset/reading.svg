@@ -1,0 +1,14 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="readingTitle">
+  <title id="readingTitle">Reading material icon</title>
+  <rect width="400" height="300" fill="#173b72"/>
+  <circle cx="200" cy="150" r="85" fill="#f2b705"/>
+  <path d="M200,108 L200,196" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+  <path d="M200,116 C170,104 140,108 122,120 L122,182 C140,170 170,166 200,178 Z" fill="#ffffff"/>
+  <path d="M200,116 C230,104 260,108 278,120 L278,182 C260,170 230,166 200,178 Z" fill="#ffffff"/>
+  <line x1="136" y1="134" x2="184" y2="128" stroke="#173b72" stroke-width="4" stroke-linecap="round"/>
+  <line x1="136" y1="148" x2="184" y2="143" stroke="#173b72" stroke-width="4" stroke-linecap="round"/>
+  <line x1="136" y1="162" x2="184" y2="158" stroke="#173b72" stroke-width="4" stroke-linecap="round"/>
+  <line x1="216" y1="128" x2="264" y2="134" stroke="#173b72" stroke-width="4" stroke-linecap="round"/>
+  <line x1="216" y1="143" x2="264" y2="148" stroke="#173b72" stroke-width="4" stroke-linecap="round"/>
+  <line x1="216" y1="158" x2="264" y2="162" stroke="#173b72" stroke-width="4" stroke-linecap="round"/>
+</svg>
