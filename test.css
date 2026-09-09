@@ -258,6 +258,12 @@ figcaption {
     color: #fff
 }
 
+.word-progress {
+    margin: 0 0 10px;
+    font-weight: 700;
+    opacity: .75
+}
+
 .word-answer,.word-bank {
     display: flex;
     flex-wrap: wrap;

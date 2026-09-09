@@ -6,7 +6,13 @@ const READING_LEVELS = [
       "I like cats.",
       "She is happy.",
       "We go to school.",
-      "This is my dog."
+      "This is my dog.",
+      "He has a red car.",
+      "They are my friends.",
+      "The sun is hot.",
+      "I can swim.",
+      "My mother cooks dinner.",
+      "The book is on the table."
     ],
     passage: {
       title: "My Day",
@@ -37,7 +43,13 @@ const READING_LEVELS = [
       "Yesterday I visited my grandmother.",
       "He was not at home last night.",
       "We are going to the market tomorrow.",
-      "My sister can swim very well."
+      "My sister can swim very well.",
+      "They usually eat lunch at noon.",
+      "I have never been to Japan.",
+      "She always arrives early for class.",
+      "Can you help me with my homework?",
+      "The children were playing in the park.",
+      "We need to buy some milk and eggs."
     ],
     passage: {
       title: "A Trip to the Market",
@@ -68,7 +80,13 @@ const READING_LEVELS = [
       "Although it was raining, we decided to go outside.",
       "She has been studying English for three years.",
       "The movie that we watched last night was boring.",
-      "If I have time tomorrow, I will call you."
+      "If I have time tomorrow, I will call you.",
+      "He asked me where I had been all day.",
+      "By the time we arrived, the show had already started.",
+      "I would rather stay home than go to the party.",
+      "She is used to working late every weekend.",
+      "The more I practice, the better I become.",
+      "We were told to wait outside until further notice."
     ],
     passage: {
       title: "The New Café",
@@ -99,7 +117,13 @@ const READING_LEVELS = [
       "Despite having little experience, she was offered the job.",
       "The report should have been finished by now.",
       "Not only did he apologize, but he also fixed the mistake.",
-      "Had I known about the traffic, I would have left earlier."
+      "Had I known about the traffic, I would have left earlier.",
+      "The proposal, which was rejected twice before, was finally approved.",
+      "Whatever you decide, make sure you inform the team first.",
+      "It is essential that every employee attend the meeting.",
+      "No sooner had she sat down than the phone rang.",
+      "The higher the risk, the greater the potential reward.",
+      "Were the budget approved, construction would begin immediately."
     ],
     passage: {
       title: "Working From Home",
@@ -130,7 +154,15 @@ const READING_LEVELS = [
       "Rarely have I encountered an argument so thoroughly unconvincing.",
       "The committee's decision, controversial as it was, went unchallenged.",
       "Not until the results were published did anyone question the method.",
-      "It was precisely her reluctance that made the offer so appealing."
+      "It was precisely her reluctance that made the offer so appealing.",
+      "Seldom does one witness such a remarkable convergence of talent and timing.",
+      "So convoluted was the explanation that even the experts remained baffled.",
+      "Only by examining the underlying assumptions can we appreciate the flaw in the reasoning.",
+      "What ultimately undermined the negotiations was not mistrust but sheer miscommunication.",
+      "Nowhere in the report is the discrepancy adequately addressed, let alone resolved.",
+      "Such was the magnitude of the error that the entire model had to be recalibrated.",
+      "Had the warning been heeded sooner, the crisis might well have been averted.",
+      "Underlying every one of her objections was a deep-seated skepticism toward authority."
     ],
     passage: {
       title: "The Illusion of Choice",
@@ -161,7 +193,15 @@ const READING_LEVELS = [
       "Little did the board anticipate the backlash their decision would provoke.",
       "So subtle was the shift in tone that few listeners noticed it at all.",
       "Were it not for her intervention, the negotiations would have collapsed.",
-      "What the critics dismissed as naïve later proved remarkably prescient."
+      "What the critics dismissed as naïve later proved remarkably prescient.",
+      "Never before had the institution faced a scandal of such magnitude.",
+      "Not since the last recession has consumer confidence fallen so precipitously.",
+      "Herein lies the paradox that has eluded economists for decades.",
+      "So entrenched had the practice become that few dared question its legitimacy.",
+      "Only in hindsight did the true cost of that compromise become apparent.",
+      "Such was her command of the subject that even seasoned critics fell silent.",
+      "Not for a moment did he consider abandoning the project, however dire the odds.",
+      "Far from resolving the dispute, the ruling merely postponed the inevitable reckoning."
     ],
     passage: {
       title: "The Cost of Certainty",
@@ -237,6 +277,11 @@ function renderWordArrange() {
   answerTokens = [];
   renderWordTiles();
   setFeedback("word-feedback", "", "");
+
+  const progressEl = document.getElementById("word-progress");
+  if (progressEl) {
+    progressEl.textContent = "Sentence " + (currentSentenceIndex + 1) + " of " + level.wordArrange.length;
+  }
 }
 
 function renderWordTiles() {
