@@ -409,6 +409,83 @@ figcaption {
     color: #fff
 }
 
+.explanation-block {
+    background: var(--color-card-bg);
+    border: 2px solid var(--color-card-border);
+    border-radius: 14px;
+    padding: 18px 20px;
+    margin-bottom: 16px
+}
+
+.explanation-block h3 {
+    margin: 0 0 8px;
+    font-size: 1.1rem
+}
+
+.explanation-block p {
+    margin: 0;
+    line-height: 1.6
+}
+
+.resource-note {
+    background: var(--color-card-bg);
+    border: 2px dashed var(--color-card-border);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    font-size: .95rem
+}
+
+.resource-note a {
+    color: inherit;
+    font-weight: 700
+}
+
+.lesson-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px
+}
+
+.lesson-card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: var(--color-card-bg);
+    border: 2px solid var(--color-card-border);
+    border-radius: 14px;
+    padding: 16px 20px
+}
+
+.lesson-card-text h3 {
+    margin: 0 0 4px;
+    font-size: 1.05rem
+}
+
+.lesson-card-text p {
+    margin: 0;
+    opacity: .8
+}
+
+.lesson-card-link {
+    flex-shrink: 0;
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: 2px solid var(--color-header-bg);
+    background: var(--color-header-bg);
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap
+}
+
+.lesson-card-link:hover {
+    opacity: .85
+}
+
 @media(max-width: 760px) {
     #image:not(.has-image) {
         min-height:310px
