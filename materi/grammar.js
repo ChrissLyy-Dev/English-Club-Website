@@ -21,7 +21,12 @@ const GRAMMAR_LEVELS = [
       { q: "They ___ from Indonesia.", options: ["is", "am", "are", "be"], correct: 2 },
       { q: "I have two ___.", options: ["box", "boxes", "boxs", "boxe"], correct: 1 },
       { q: "Choose the correct word order.", options: ["I tea like", "Like I tea", "I like tea", "Tea I like"], correct: 2 },
-      { q: "We ___ students.", options: ["is", "am", "are", "be"], correct: 2 }
+      { q: "We ___ students.", options: ["is", "am", "are", "be"], correct: 2 },
+      { q: "He ___ a doctor.", options: ["is", "are", "am", "be"], correct: 0 },
+      { q: "I see two ___.", options: ["dog", "dogs", "doges", "dog's"], correct: 1 },
+      { q: "___ you a teacher?", options: ["Is", "Are", "Am", "Be"], correct: 1 },
+      { q: "Choose the correct sentence.", options: ["He like pizza.", "He likes pizza.", "He liking pizza.", "He is like pizza."], correct: 1 },
+      { q: "They ___ happy today.", options: ["is", "am", "are", "be"], correct: 2 }
     ]
   },
   {
@@ -46,7 +51,12 @@ const GRAMMAR_LEVELS = [
       { q: "This bag is ___ than that one.", options: ["expensive", "more expensive", "expensiver", "most expensive"], correct: 1 },
       { q: "She ___ her homework last night.", options: ["finish", "finishes", "finished", "finishing"], correct: 2 },
       { q: "How ___ water do you need?", options: ["many", "much", "some", "a"], correct: 1 },
-      { q: "This is the ___ book I've ever read.", options: ["gooder", "best", "better", "goodest"], correct: 1 }
+      { q: "This is the ___ book I've ever read.", options: ["gooder", "best", "better", "goodest"], correct: 1 },
+      { q: "He ___ his keys yesterday.", options: ["lose", "loses", "lost", "losing"], correct: 2 },
+      { q: "This film is ___ than the last one.", options: ["bad", "worse", "badder", "more bad"], correct: 1 },
+      { q: "There isn't ___ sugar left.", options: ["many", "much", "a", "some"], correct: 1 },
+      { q: "I need ___ apples for the cake.", options: ["much", "a", "some", "any"], correct: 2 },
+      { q: "This is the ___ day of my life.", options: ["bad", "worse", "worst", "baddest"], correct: 2 }
     ]
   },
   {
@@ -71,7 +81,12 @@ const GRAMMAR_LEVELS = [
       { q: "She ___ to Japan last year.", options: ["has gone", "went", "has go", "go"], correct: 1 },
       { q: "If it rains tomorrow, we ___ the picnic.", options: ["cancel", "will cancel", "cancelled", "canceling"], correct: 1 },
       { q: "You ___ wear a seatbelt — it's the law.", options: ["should", "must", "could", "might"], correct: 1 },
-      { q: "I think you ___ apologize, but it's up to you.", options: ["must", "have to", "should", "will"], correct: 2 }
+      { q: "I think you ___ apologize, but it's up to you.", options: ["must", "have to", "should", "will"], correct: 2 },
+      { q: "By the time we got there, the movie ___ already started.", options: ["has", "have", "had", "was"], correct: 2 },
+      { q: "I ___ finished my homework yet.", options: ["have", "haven't", "has", "hasn't"], correct: 1 },
+      { q: "If you ___ me, I will help you.", options: ["ask", "asked", "will ask", "asking"], correct: 0 },
+      { q: "You ___ smoke here — it's not allowed.", options: ["should", "must not", "don't have to", "might not"], correct: 1 },
+      { q: "She's used to ___ up early.", options: ["wake", "waking", "woke", "waken"], correct: 1 }
     ]
   },
   {
@@ -96,7 +111,12 @@ const GRAMMAR_LEVELS = [
       { q: "The window ___ by the storm last night.", options: ["broke", "was broken", "has broken", "breaks"], correct: 1 },
       { q: "She said she ___ tired.", options: ["is", "was", "were", "be"], correct: 1 },
       { q: "If they ___ more time, they would finish the project.", options: ["have", "had", "has", "having"], correct: 1 },
-      { q: "This bridge ___ in 1932.", options: ["built", "was built", "has built", "builds"], correct: 1 }
+      { q: "This bridge ___ in 1932.", options: ["built", "was built", "has built", "builds"], correct: 1 },
+      { q: "I wish I ___ more time to prepare.", options: ["have", "had", "has", "having"], correct: 1 },
+      { q: "The report ___ by Friday.", options: ["must finish", "must be finished", "must finishing", "must been finished"], correct: 1 },
+      { q: "He asked me if I ___ coming to the party.", options: ["am", "was", "were", "be"], correct: 1 },
+      { q: "If she ___ harder, she would pass.", options: ["study", "studies", "studied", "studying"], correct: 2 },
+      { q: "They told us that they ___ back soon.", options: ["come", "came", "will come", "would come"], correct: 3 }
     ]
   },
   {
@@ -121,7 +141,12 @@ const GRAMMAR_LEVELS = [
       { q: "Rarely ___ such dedication.", options: ["I have seen", "have I seen", "I seen", "seen I have"], correct: 1 },
       { q: "___ was John who solved the problem.", options: ["It", "This", "That", "There"], correct: 0 },
       { q: "Not until he apologized ___ she forgive him.", options: ["did", "does", "had", "was"], correct: 0 },
-      { q: "If we had known, we ___ differently.", options: ["would act", "would have acted", "will act", "acted"], correct: 1 }
+      { q: "If we had known, we ___ differently.", options: ["would act", "would have acted", "will act", "acted"], correct: 1 },
+      { q: "___ the deadline, we still submitted on time.", options: ["Despite", "Although", "Because", "Since"], correct: 0 },
+      { q: "It wasn't until midnight ___ finished the report.", options: ["that he", "when he", "did he", "he"], correct: 0 },
+      { q: "So exhausted ___ that she fell asleep instantly.", options: ["was she", "she was", "did she", "she did"], correct: 0 },
+      { q: "Little ___ that the meeting would be cancelled.", options: ["he knew", "did he know", "he did know", "knew he"], correct: 1 },
+      { q: "Had they consulted an expert, the mistake ___.", options: ["avoided", "would avoid", "would have been avoided", "has been avoided"], correct: 2 }
     ]
   },
   {
@@ -146,7 +171,12 @@ const GRAMMAR_LEVELS = [
       { q: "He's not answering — he ___ have left already.", options: ["should", "must", "could", "would"], correct: 1 },
       { q: "You ___ told me you were coming — I would have prepared dinner.", options: ["should have", "must have", "could", "would"], correct: 0 },
       { q: "The committee recommended that the policy ___ revised.", options: ["is", "be", "was", "being"], correct: 1 },
-      { q: "___, the results suggest a correlation, not causation.", options: ["Arguably", "Argue", "Argument", "Argues"], correct: 0 }
+      { q: "___, the results suggest a correlation, not causation.", options: ["Arguably", "Argue", "Argument", "Argues"], correct: 0 },
+      { q: "___ he arrived than the phone started ringing.", options: ["No sooner had", "No sooner did", "No sooner he had", "No sooner he"], correct: 0 },
+      { q: "___ the committee reconsider, the project will proceed as planned.", options: ["Should", "If", "Would", "Unless"], correct: 0 },
+      { q: "The claim, ___ plausible, lacks any supporting evidence.", options: ["while", "despite", "because", "so"], correct: 0 },
+      { q: "___ can the true cost of the decision be measured.", options: ["Only in hindsight", "In hindsight only", "Hindsight only in", "Only hindsight in"], correct: 0 },
+      { q: "Her argument, ___ compelling on the surface, ultimately falls apart under scrutiny.", options: ["although", "despite", "because of", "due to"], correct: 0 }
     ]
   }
 ];

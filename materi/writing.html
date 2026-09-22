@@ -25,9 +25,27 @@
 
   <main id="content" class="gallery-container">
     <p><a href="../index.html">&larr; Back to gallery</a></p>
-    <section>
-      <h2>Coming soon</h2>
-      <p>Add your writing materials, prompts, or exercises here.</p>
+
+    <section id="level-select">
+      <h2 id="level-heading">Choose your level</h2>
+      <div id="level-tabs" class="level-tabs" role="tablist" aria-label="English level"></div>
+    </section>
+
+    <section id="prompt-section">
+      <h2 id="prompt-title"></h2>
+      <p id="prompt-instructions" class="passage-text"></p>
+
+      <p class="checklist-heading">Try to include:</p>
+      <ul id="checklist" class="checklist"></ul>
+
+      <label for="writing-area" class="writing-label">Your writing</label>
+      <textarea id="writing-area" class="writing-textarea" rows="10" placeholder="Start writing here… your draft is saved automatically in this browser."></textarea>
+
+      <div class="writing-controls">
+        <p id="word-count" class="word-count"></p>
+        <button id="writing-clear" type="button">Clear draft</button>
+      </div>
+      <p id="writing-feedback" class="feedback" aria-live="polite"></p>
     </section>
   </main>
 
@@ -36,5 +54,6 @@
   </footer>
 
   <script src="../test.js"></script>
+  <script src="writing.js"></script>
 </body>
 </html>

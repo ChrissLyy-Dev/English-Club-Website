@@ -486,6 +486,72 @@ figcaption {
     opacity: .85
 }
 
+.checklist-heading {
+    font-weight: 700;
+    margin: 0 0 8px
+}
+
+.checklist {
+    margin: 0 0 20px;
+    padding-left: 22px;
+    line-height: 1.7
+}
+
+.writing-label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px
+}
+
+.writing-textarea {
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    border: 2px solid var(--color-card-border);
+    background: var(--color-card-bg);
+    color: var(--color-text);
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.6;
+    resize: vertical
+}
+
+.writing-textarea:focus-visible {
+    outline: 3px solid #f2b705;
+    outline-offset: 2px
+}
+
+.writing-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px
+}
+
+.word-count {
+    margin: 0;
+    font-weight: 700;
+    opacity: .8
+}
+
+.writing-controls button {
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: 2px solid var(--color-card-border);
+    background: var(--color-card-bg);
+    color: var(--color-text);
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer
+}
+
+.writing-controls button:hover {
+    border-color: var(--color-error);
+    color: var(--color-error)
+}
+
 @media(max-width: 760px) {
     #image:not(.has-image) {
         min-height:310px
