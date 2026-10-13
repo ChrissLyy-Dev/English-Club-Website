@@ -17,7 +17,7 @@
   <a class="skip-link" href="#content">Skip to content</a>
   <header class="site-header">
     <h1>Reading</h1>
-    <p>Further reading materials and practice.</p>
+    <p>Reading practice from A1 to C2, with longer in-depth texts for B2 and above.</p>
     <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
       <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
     </button>
@@ -46,8 +46,11 @@
     </section>
 
     <section id="passage-section">
+      <div id="passage-tabs" class="level-tabs" role="tablist" aria-label="Reading text" hidden></div>
       <h2 id="passage-title"></h2>
-      <p id="passage-text" class="passage-text"></p>
+      <p id="passage-meta" class="word-progress"></p>
+      <div id="passage-text" class="passage-text"></div>
+      <p id="passage-score" class="word-progress" aria-live="polite"></p>
       <div id="questions-container"></div>
     </section>
   </main>

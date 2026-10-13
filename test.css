@@ -372,6 +372,37 @@ figcaption {
     margin-bottom: 24px
 }
 
+.passage-text p {
+    margin: 0 0 1em
+}
+
+.passage-text p:last-child {
+    margin-bottom: 0
+}
+
+.para-num {
+    display: inline-block;
+    min-width: 1.6em;
+    margin-right: 8px;
+    padding: 0 6px;
+    border-radius: 6px;
+    background: var(--color-header-bg);
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.6;
+    vertical-align: 1px
+}
+
+#passage-tabs {
+    margin-bottom: 18px
+}
+
+#passage-tabs[hidden] {
+    display: none
+}
+
 .question-card {
     border: 2px solid var(--color-card-border);
     border-radius: 14px;
