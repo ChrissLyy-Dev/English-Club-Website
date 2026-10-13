@@ -17,7 +17,7 @@
   <a class="skip-link" href="#content">Skip to content</a>
   <header class="site-header">
     <h1>Vocabulary</h1>
-    <p>Further vocabulary materials and practice.</p>
+    <p>Learn 350+ useful English words by topic, then test yourself.</p>
     <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
       <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
     </button>
@@ -25,9 +25,28 @@
 
   <main id="content" class="gallery-container">
     <p><a href="../index.html">&larr; Back to gallery</a></p>
-    <section>
-      <h2>Coming soon</h2>
-      <p>Add your vocabulary lists, flashcards, or exercises here.</p>
+
+    <section id="topic-select">
+      <h2 id="topic-heading">Choose a topic</h2>
+      <div id="topic-tabs" class="level-tabs" role="tablist" aria-label="Vocabulary topic"></div>
+    </section>
+
+    <section id="word-list-section">
+      <h2>Word List</h2>
+      <div class="vocab-toolbar">
+        <label class="writing-label" for="vocab-search">Search a word or its meaning</label>
+        <input id="vocab-search" class="vocab-search" type="search" placeholder="e.g. weather, lapar, give up" autocomplete="off">
+        <p id="vocab-count" class="word-count" aria-live="polite"></p>
+      </div>
+      <div id="vocab-grid" class="vocab-grid"></div>
+    </section>
+
+    <section id="practice-section">
+      <h2>Practice</h2>
+      <div class="word-arrange-controls">
+        <button id="new-quiz" type="button">New quiz</button>
+      </div>
+      <div id="questions-container"></div>
     </section>
   </main>
 
@@ -36,5 +55,6 @@
   </footer>
 
   <script src="../test.js"></script>
+  <script src="vocabulary.js"></script>
 </body>
 </html>

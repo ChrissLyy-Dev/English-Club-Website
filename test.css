@@ -17,7 +17,10 @@ html {
     --color-image-bg: #5d687c;
     --color-skip-bg: #172033;
     --color-success: #1b7a44;
-    --color-error: #c62828
+    --color-error: #c62828;
+    --color-link: #173b72;
+    --color-tab-active-bg: #173b72;
+    --color-tab-active-text: #fff
 }
 
 [data-theme="dark"] {
@@ -31,7 +34,10 @@ html {
     --color-image-bg: #2a3142;
     --color-skip-bg: #05070d;
     --color-success: #4ade80;
-    --color-error: #f87171
+    --color-error: #f87171;
+    --color-link: #8ab4f8;
+    --color-tab-active-bg: #f2b705;
+    --color-tab-active-text: #121212
 }
 
 body {
@@ -116,6 +122,11 @@ body {
     width: min(1080px,92%);
     margin: 0 auto;
     padding: 36px 0 48px
+}
+
+main a {
+    color: var(--color-link);
+    font-weight: 700
 }
 
 h2 {
@@ -253,9 +264,9 @@ figcaption {
 }
 
 .level-tab[aria-selected="true"] {
-    background: var(--color-header-bg);
-    border-color: var(--color-header-bg);
-    color: #fff
+    background: var(--color-tab-active-bg);
+    border-color: var(--color-tab-active-bg);
+    color: var(--color-tab-active-text)
 }
 
 .word-progress {
@@ -550,6 +561,89 @@ figcaption {
 .writing-controls button:hover {
     border-color: var(--color-error);
     color: var(--color-error)
+}
+
+.vocab-toolbar {
+    margin-bottom: 18px
+}
+
+.vocab-search {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 2px solid var(--color-card-border);
+    background: var(--color-card-bg);
+    color: var(--color-text);
+    font-family: inherit;
+    font-size: 1rem;
+    margin-bottom: 10px
+}
+
+.vocab-search:focus-visible {
+    outline: 3px solid #f2b705;
+    outline-offset: 2px
+}
+
+.vocab-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    gap: 14px;
+    margin-bottom: 36px
+}
+
+.vocab-card {
+    background: var(--color-card-bg);
+    border: 2px solid var(--color-card-border);
+    border-radius: 14px;
+    padding: 14px 16px
+}
+
+.vocab-card-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px
+}
+
+.vocab-word {
+    margin: 0;
+    font-size: 1.1rem
+}
+
+.vocab-pos {
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: var(--color-header-bg);
+    color: #fff;
+    font-size: .75rem;
+    font-weight: 700;
+    white-space: nowrap
+}
+
+.speak-btn {
+    margin-left: auto;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: 2px solid var(--color-card-border);
+    background: var(--color-bg);
+    font-size: 1rem;
+    cursor: pointer
+}
+
+.speak-btn:hover {
+    border-color: var(--color-header-bg)
+}
+
+.vocab-meaning {
+    margin: 0 0 6px;
+    font-weight: 700
+}
+
+.vocab-example {
+    margin: 0;
+    font-style: italic;
+    opacity: .8;
+    line-height: 1.5
 }
 
 @media(max-width: 760px) {
